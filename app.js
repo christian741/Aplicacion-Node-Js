@@ -1,10 +1,10 @@
 /**
  * App.js clase encargada de ser la principal
  */
-var express = require("express");// framework express
-var fs = require("fs");//Fyle sistem
+var express = require('express');// framework express
+//var fs = require("fs");//Fyle sistem
 
-const pug = require("pug");//Carpeta views  planntillas
+const pug = require('pug');//Carpeta views  planntillas
 
 var app = express(); //asignacion de uso de express
 
@@ -28,8 +28,8 @@ app.use( express.static(__dirname + '/public'))
  * @return  {[type]}            [return description]
  */
 app.get('/',function(request,response){
-    response.render("index.pug");//use pug para plantilla
-    response.send("index.html"); //llama el archivo index.html
+    response.render('index.pug');//use pug para plantilla
+    //response.send("index.html"); //llama el archivo index.html
 });
 
 //Puerto local
